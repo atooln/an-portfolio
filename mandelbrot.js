@@ -1,3 +1,4 @@
+// npx vite to start
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { SDFGeometryGenerator } from 'three/addons/geometries/SDFGeometryGenerator.js';
