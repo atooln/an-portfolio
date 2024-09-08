@@ -11,7 +11,7 @@ const settings = {
   bounds: 1,
   autoRotate: true,
   wireframe: true,
-  material: 'normal',
+  material: 'depth',
   vertexCount: '0'
 };
 
@@ -79,7 +79,7 @@ function init() {
 
   controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
-  controls.enableZoom = false;
+  //controls.enableZoom = false;
 
   window.addEventListener('resize', onWindowResize);
 
@@ -113,7 +113,7 @@ function compile() {
     meshFromSDF = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial());
     scene.add(meshFromSDF);
 
-    const scale = 300; //Math.min(window.innerWidth, window.innerHeight) / 2 * 0.66;
+    const scale = Math.min(window.innerWidth, window.innerHeight) / 2 * .9;//0.66;
     meshFromSDF.scale.set(scale, scale, scale);
 
     setMaterial();

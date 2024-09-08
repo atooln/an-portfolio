@@ -6,11 +6,12 @@
     <title>ATUL NAIR</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Helvetica, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000000;
-            color: #f0f0f0;
+            background-color:#f0f0f0;
+            color: #000000;
+
         }
         .container {
             max-width: 1200px;
@@ -28,9 +29,13 @@
             flex: 1;
         }
 
+        a, a:visited{
+             color: #000000;
+        }
+
         nav a {
             text-decoration: none;
-            color: #f0f0f0;
+            color:  #000000;
             margin-left: 20px;
         }
         .contact-info {
@@ -54,9 +59,13 @@
         .intro {
             /* max-width: 600px;
             margin: 50px 0; */
-
-            max-width: 300px;
+            max-width: 280px;
             margin: 20px 0;
+            text-align: left;
+
+            font-size: 20px;
+
+
         }
         .about {
             display: flex;
@@ -87,10 +96,12 @@
           position: fixed;
           top: 0;
           left: 0;
+          z-index: -1;
         }
 
         main {
-            position: absolute
+            position: absolute;
+            /* z-index: 1; */
         }
 
     </style>
@@ -106,36 +117,40 @@
                 <a href="#projects">PROJECTS</a>
             </nav>
             <div class="contact-info">
-                <p>linkedin</p>
-                <p>twitter</p>
-                <p>atulnair11@gmail.com</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/atool-nair/">LINKEDIN</a>
+                </p>
+                <p>
+                    <a href="https://x.com/_notatool">TWITTER</a>
+                </p>
+                <p>
+                    <a href="./assets/AN-Resume.pdf" download>RESUME</a>
+                </p>
+
             </div>
         </header>
 
         <main>
             <div class="name">
-
-                <h1>Atul</h1>
-                <h1>Nair</h1>
-
+                <h1>Atul Nair<sup>&trade;</sup></h1>
             </div>
 
             <p class="intro">
-                MY NAME IS ATUL NAIR, AND I'M A MACHINE LEARNING ENGINEER BASED IN THE BAY AREA.
-                MY GOAL IS TO EXPLORE THE BOUNDARIES OF MATHEMATICS AND NEUROSCIENCE.
+                I'M A MACHINE LEARNING ENGINEER AT <a href="https://bosonmotors.com/">BOSON MOTORS</a>. PREVIOUSLY at <a href="https://ucsd.edu/">UC SANDIEGO</a>.
+                WANNABE MATHEMATICIAN.
 
             </p>
 
             <section class="about">
 
-                <img src="buffkirbyplaceholder.jpg" alt="About my art">
+                <!-- <img src="buffkirbyplaceholder.jpg" alt="About my art"> -->
                 <div class="about-text">
-                    <h2>lorem ipsum</h2>
+                    <!-- <h2>lorem ipsum</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                         id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit.
                         Sed aliquam dictum sapien, id sagittis augue malesuada eu.
-                    </p>
+                    </p> -->
                 </div>
             </section>
         </main>
