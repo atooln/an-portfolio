@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atul Nair - Portfolio</title>
+    <title>ATUL NAIR</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: #000000;
+            color: #f0f0f0;
         }
         .container {
             max-width: 1200px;
@@ -20,32 +20,43 @@
         header {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
             margin-bottom: 50px;
         }
+
+        nav {
+            flex: 1;
+        }
+
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #f0f0f0;
             margin-left: 20px;
         }
         .contact-info {
             text-align: right;
+            flex: 1
         }
         h1 {
             font-size: 4em;
             font-weight: normal;
             margin: 0;
         }
+
         .name {
             display: flex;
             flex-direction: column;
+            align-self: center;
         }
-        .last-name {
-            align-self: flex-end;
-        }
+
+
+
         .intro {
-            max-width: 600px;
-            margin: 50px 0;
+            /* max-width: 600px;
+            margin: 50px 0; */
+
+            max-width: 300px;
+            margin: 20px 0;
         }
         .about {
             display: flex;
@@ -60,14 +71,35 @@
         .about-text {
             flex: 1;
         }
+
         .about h2 {
             font-size: 2.5em;
             font-weight: normal;
             margin-top: 0;
         }
+
+        canvas {
+          /* width: 100vw;
+          height: 100vh;
+          display: block;
+          z-index: -9999;
+          */
+          position: fixed;
+          top: 0;
+          left: 0;
+        }
+
+        main {
+            position: absolute
+        }
+
     </style>
 </head>
 <body>
+    <canvas id="'bg"></canvas>
+    <script type="module" src="/mandelbrot.js"></script>
+
+
     <div class="container">
         <header>
             <nav>
@@ -82,20 +114,23 @@
 
         <main>
             <div class="name">
+
                 <h1>Atul</h1>
-                <h1 class="last-name">Nair</h1>
+                <h1>Nair</h1>
+
             </div>
 
             <p class="intro">
-                MY NAME IS ATUL NAIR, AND I'M A MACHINE LEARNING ENGINEER BASED IN SAN JOSE CALIFORNIA.
+                MY NAME IS ATUL NAIR, AND I'M A MACHINE LEARNING ENGINEER BASED IN THE BAY AREA.
                 MY GOAL IS TO EXPLORE THE BOUNDARIES OF MATHEMATICS AND NEUROSCIENCE.
 
             </p>
 
             <section class="about">
+
                 <img src="buffkirbyplaceholder.jpg" alt="About my art">
                 <div class="about-text">
-                    <h2>about my art</h2>
+                    <h2>lorem ipsum</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                         id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit.
