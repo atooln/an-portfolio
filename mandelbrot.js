@@ -2,8 +2,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { SDFGeometryGenerator } from 'three/addons/geometries/SDFGeometryGenerator.js';
-import Stats from 'three/addons/libs/stats.module.js';
-import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
 
 let renderer, stats, meshFromSDF, scene, camera, clock, controls;
 
@@ -12,7 +10,7 @@ const settings = {
   bounds: 1,
   autoRotate: true,
   wireframe: true,
-  material: 'depth',
+  material: 'depth', //depth, normal
   vertexCount: '0'
 };
 

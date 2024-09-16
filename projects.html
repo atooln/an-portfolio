@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin: 40px 0;
+            width: 100%;
+        }
+        nav a {
+            margin: 0 10px;
+            /* font-weight: bold; */
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+
+        }
+        .projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+            gap: 30px;
+            padding: 20px;
+        }
+        .project {
+            background-color: #f4f4f4;
+            border-radius: 30px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .project h2 {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 0;
+        }
+        .project p {
+            font-size: 14px;
+            text-align: center;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #333;
+
+            /* font-weight: bold; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="https://www.linkedin.com/in/atool-nair" target="_blank">LINKEDIN</a>
+            <a href="https://twitter.com/_notatool" target="_blank">TWITTER</a>
+            <a href="https://github.com/atooln" target="_blank">GITHUB</a>
+            <a href="/assets/AN-Resume.pdf" download>RESUME</a>
+        </nav>
+    </header>
+
+    <div class="projects">
+
+        <div class="project">
+            <a href="https://arxiv.org/abs/2206.14947"> DECISION FOREST BASED EMG SIGNAL CLASSIFICATION WITH LOW VOLUME DATASET AUGMENTED WITH RV GAUSSIAN NOISE</a>
+        </div>
+
+        <div class="project">
+            <a href="https://github.com/atooln/micrograd"> AUTOGRAD ENGINE IN C </a>
+        </div>
+
+        <div class="project">
+            <a href="https://github.com/atooln/Breast-Cancer-Analysis/tree/main"> BREAST CANCER LIFE EXPECTANCY ANALYSIS</a>
+        </div>
+
+        <div class="project">
+            <a href="https://github.com/atooln/Pneumonia-Image-Segmentation"> PNEUMONIA IMAGE SEGMENTATION </a>
+        </div>
+
+        <div class="project">
+            <a href="https://github.com/atooln/Twitter-Political-Affiliation-Classification/tree/main"> TWITTER POLITICAL SENTIMENT ANALYSIS </a>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -15,6 +15,7 @@
         }
         .container {
             max-width: 1200px;
+            max-height: 125px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -25,21 +26,15 @@
             margin-bottom: 50px;
         }
 
-        nav {
-            flex: 1;
-        }
-
         a, a:visited{
              color: #000000;
         }
 
-        nav a {
-            text-decoration: none;
-            color:  #000000;
-            margin-left: 20px;
-        }
         .contact-info {
             text-align: right;
+            /* font-weight: bold; */
+            font-size: 20px;
+            padding: 10px;
             flex: 1
         }
         h1 {
@@ -54,54 +49,26 @@
             align-self: center;
         }
 
-
-
         .intro {
-            /* max-width: 600px;
-            margin: 50px 0; */
             max-width: 280px;
-            margin: 20px 0;
+            max-height: auto;
+            margin: 10px 0;
             text-align: left;
-
             font-size: 20px;
-
-
-        }
-        .about {
-            display: flex;
-            align-items: center;
-            margin-top: 100px;
-        }
-        .about img {
-            width: 300px;
-            height: auto;
-            margin-right: 50px;
-        }
-        .about-text {
-            flex: 1;
-        }
-
-        .about h2 {
-            font-size: 2.5em;
-            font-weight: normal;
-            margin-top: 0;
+            font-weight: bold;
         }
 
         canvas {
-          /* width: 100vw;
-          height: 100vh;
-          display: block;
-          z-index: -9999;
-          */
           position: fixed;
           top: 0;
           left: 0;
+          width: 1px;
+          height: 1px;
           z-index: -1;
         }
 
-        main {
+        .absolute {
             position: absolute;
-            /* z-index: 1; */
         }
 
     </style>
@@ -113,9 +80,6 @@
 
     <div class="container">
         <header>
-            <nav>
-                <a href="#projects">PROJECTS</a>
-            </nav>
             <div class="contact-info">
                 <p>
                     <a href="https://www.linkedin.com/in/atool-nair/">LINKEDIN</a>
@@ -123,37 +87,34 @@
                 <p>
                     <a href="https://x.com/_notatool">TWITTER</a>
                 </p>
+
+                <p>
+                    <a href="https://www.github.com/atooln">GITHUB</a>
+                </p>
+
                 <p>
                     <a href="./assets/AN-Resume.pdf" download>RESUME</a>
                 </p>
-
+                <p>
+                    <a href="/projects" target="_self">PROJECTS</a>
+                </p>
             </div>
         </header>
 
-        <main>
+        <div class="absolute">
             <div class="name">
                 <h1>Atul Nair<sup>&trade;</sup></h1>
             </div>
 
             <p class="intro">
-                I'M A MACHINE LEARNING ENGINEER AT <a href="https://bosonmotors.com/">BOSON MOTORS</a>. PREVIOUSLY at <a href="https://ucsd.edu/">UC SANDIEGO</a>.
-                WANNABE MATHEMATICIAN.
-
+                I'M A MACHINE LEARNING ENGINEER AT <a href="https://bosonmotors.com/">BOSON MOTORS</a>. PREVIOUSLY AT <a href="https://ucsd.edu/">UC SANDIEGO</a>.
             </p>
-
-            <section class="about">
-
-                <!-- <img src="buffkirbyplaceholder.jpg" alt="About my art"> -->
-                <div class="about-text">
-                    <!-- <h2>lorem ipsum</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                        id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit.
-                        Sed aliquam dictum sapien, id sagittis augue malesuada eu.
-                    </p> -->
-                </div>
-            </section>
-        </main>
+        </div>
     </div>
+
+
+
+
+
 </body>
 </html>
